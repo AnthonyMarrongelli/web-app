@@ -1,17 +1,14 @@
 import './App.css';
+import Dashboard from './Dashboard';
 
 function App() {
-
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Hello World
-        </p>
-        
-      </header>
+      <Dashboard />
+      {/* Other components or routes */}
     </div>
   );
 }
 
 export default App;
+
