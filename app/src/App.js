@@ -1,15 +1,11 @@
 import './App.css';
+import LoginSignUp from './Components/LoginSignup/LoginSignUp';
 
 function App() {
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Hello World
-        </p>
-        
-      </header>
+    <div >
+      <LoginSignUp />
     </div>
   );
 }
