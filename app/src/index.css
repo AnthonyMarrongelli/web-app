@@ -26,8 +26,8 @@
   }
   .frame-child,
   .frame-item {
-    position: absolute;
-    top: 0;
+    position: relative;
+    top: 80;
     left: 682px;
     border-radius: var(--br-6xl);
     width: 635px;
@@ -39,7 +39,7 @@
   .spending,
   .user-data {
     position: absolute;
-    top: 29px;
+    top: -30px;
     left: 721px;
     display: inline-block;
     width: 339px;
@@ -623,7 +623,7 @@
   }
   .csp-score {
     position: absolute;
-    top: 176px;
+    top: 170px;
     left: 732px;
     box-shadow: var(--card-shadows-card-16dp-shadow);
     width: 495px;
@@ -636,12 +636,14 @@
   .frame2 {
     align-self: stretch;
     overflow: hidden;
+  
   }
   .frame2 {
     position: relative;
     height: 735px;
     flex-shrink: 0;
     font-size: var(--font-size-51xl);
+    
   }
   .frame {
     display: flex;
@@ -670,14 +672,14 @@
   }
   .rectangle-icon {
     position: absolute;
-    top: 5px;
+    top: 50px;
     left: 0;
     width: 1316px;
     height: 862px;
   }
   .financial-literacy-tips {
-    position: absolute;
-    top: 0;
+    position: relative;
+    top: 200px;
     left: 14px;
     display: inline-block;
     width: 764px;
@@ -693,6 +695,7 @@
     height: 867px;
     flex-shrink: 0;
     font-size: var(--font-size-51xl);
+    margin-top: -80px;
   }
   .frame16 {
     display: flex;
