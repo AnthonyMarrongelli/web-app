@@ -5,7 +5,7 @@ import './index.css';
 import '@chatscope/chat-ui-kit-styles/dist/default/styles.min.css'
 import { MainContainer, ChatContainer, MessageList, Message, MessageInput, TypingIndicator } from "@chatscope/chat-ui-kit-react"
 
-const API_KEY = "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"
+const API_KEY = process.env.GPT_API_KEY;
 
 function Dashboard() {
     const [typing, setTyping] = useState(false);
