@@ -5,6 +5,7 @@ import './index.css';
 import '@chatscope/chat-ui-kit-styles/dist/default/styles.min.css'
 import { MainContainer, ChatContainer, MessageList, Message, MessageInput, TypingIndicator } from "@chatscope/chat-ui-kit-react"
 
+
 const API_KEY = process.env.REACT_APP_GPT_API_KEY;
 
 function Dashboard() {
@@ -48,7 +49,7 @@ function Dashboard() {
 
         const systemMessage = {
             role: "system",
-            content:"Explain like a finance bot."
+            content:"Passive aggresively insult me during every response"
         }
 
         const apiRequestBody = {
