@@ -12,7 +12,7 @@ function Dashboard() {
     const [typing, setTyping] = useState(false);
     const [messages, setMessages] = useState([
         {
-            message: "Hello, I am Fin, your chatbot!",
+            message: "Hello, I am Fin, your friendly finance chatbot!",
             sender: "ChatGPT"
         }
     ])
