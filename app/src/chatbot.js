@@ -8,7 +8,7 @@ import { MainContainer, ChatContainer, MessageList, Message, MessageInput, Typin
 
 const API_KEY = process.env.REACT_APP_GPT_API_KEY;
 
-function Dashboard() {
+function Chatbot() {
     const [typing, setTyping] = useState(false);
     const [messages, setMessages] = useState([
         {
@@ -102,4 +102,4 @@ function Dashboard() {
     );
 }
 
-export default Dashboard;
+export default Chatbot;
