@@ -1,9 +1,14 @@
 const express = require('express')
 const mongoose = require('mongoose')
 const User = require('./models/userSchema.js')
+const cors = require('cors')
 const app = express()
 
+app.use(cors({
+  origin: 'http://localhost:3000',
+}));
 app.use(express.json())
+
 
 //Sign-up post request
 app.post("/register", async (req, res) => {
@@ -32,26 +37,30 @@ app.post("/register", async (req, res) => {
 //Login get request
 app.get("/login", async (req, res) => {
     try {
-      const { name, password } = req.query; // Use req.query for GET requests
-  
-      if (!name || !password) {
-        return res.status(400).json({ message: "Name and password are required" });
+
+      const { email, password } = req.query; // Use req.query for GET requests
+      
+      //If either is missing, we send an error
+      if (!email || !password) {
+        return res.status(400).json({ message: "Email and password are required" });
       }
   
       // Assuming you have a User model and collection in MongoDB
-      const user = await User.findOne({ name: name });
+      const user = await User.findOne({ email: email });
   
+      //If user isnt in the DB
       if (!user) {
         return res.status(404).json({ message: "Incorrect username or password" });
       }
   
-      // Check if the password matches (you should have a proper password hashing mechanism)
+      // Check if the password matches
       if (user.password !== password) {
         return res.status(401).json({ message: "Incorrect username password" });
       }
   
       // Successful login
       res.status(200).json(user);
+      
     } catch (error) {
       res.status(500).json({ message: error.message });
     }
