@@ -1,10 +1,10 @@
 import './App.css';
-import Dashboard from './Dashboard';
+import Chatbot from './chatbot';
 
 function App() {
   return (
     <div className="App">
-      <Dashboard />
+      <Chatbot />
       {/* Other components or routes */}
     </div>
   );

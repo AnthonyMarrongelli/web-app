@@ -11,3 +11,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.gradient-bg {
+  background: linear-gradient(to bottom, darkblue, lightblue);
+  min-height: 100vh;  /* This ensures the gradient covers the full viewport height */
+}
+
+.dash-page {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+    height: 100vh;           /* Take up full viewport height */
+    background: linear-gradient(to bottom, darkblue, lightblue); /* Gradient, as mentioned before */
+}
