@@ -65,7 +65,7 @@ app.listen(3853, () => {
 
 
 //MongoDB Connection
-mongoose.connect('mongodb+srv://admin123:Cat3456@maincluster.rhotopq.mongodb.net/web-app?retryWrites=true&w=majority')
+mongoose.connect('[LINK SAVED BY ANTHONY]')
 .then(() => {
     console.log("Connected to MongoDB")
 }).catch(() => {
